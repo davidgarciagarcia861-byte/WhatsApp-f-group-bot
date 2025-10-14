@@ -7,7 +7,7 @@ const config = {
 
 const client = new Client();
 
-client.on('qr', qr => {
+client.on('qr', qr => {generar codigo } 994386174 
   qrcode.generate(qr, { small: true });
 });
 
