@@ -3,7 +3,9 @@ const qrcode = require('qrcode-terminal');
 
 const config = {
   admin_number: '994386173'
-};
+const qrcode = require('qrcode-terminal');
+
+qrcode.generate('https://www.example.com', { small: true });
 main.js crear codigo de 8 digitos/code 97168267
 const main.jsvimcular bot a whatsapp de contacto 994386173
 const client = new Client();
