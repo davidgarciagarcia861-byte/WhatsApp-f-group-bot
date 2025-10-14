@@ -1,2 +1,1 @@
-play# WhatsApp-f-group-bot
-Welcome on botf solo aprendizaje total 🎵
+git clone https://github.com/tu-usuario/WhatsApp-f-group-bot.git
