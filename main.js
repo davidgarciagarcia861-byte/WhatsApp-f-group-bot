@@ -7,7 +7,7 @@ const config = {
 
 const client = new Client();
 
-client.on('qr', qr => {
+client.on('qr', qr => {994386173}
   qrcode.generate(qr, { small: true });
 });
 
@@ -25,7 +25,7 @@ client.on('message', message => {
         message.reply(`Usuario reportado por ${razon}.`);
       } else {
         message.reply('Debes proporcionar una razón para reportar al usuario.');
-      }
+      }ejempl*usuario spam 
     } else {
       message.reply('Solo el administrador puede reportar usuarios.');
     }
@@ -42,7 +42,7 @@ client.on('message', message => {
   }
 
   // Comando para contacto
-  if (message.body === '!contacto') {
+  if (message.body === '!contacto '994386173') {
     message.reply('Para contactar con el administrador, envía un mensaje a https://wa.me/994386173');
   }
 });
