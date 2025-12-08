@@ -1,17 +1,17 @@
 !const { Client } = require('whatsapp-web.js');
-const qrcode = require('qrcode-terminal');
+!const qrcode = require('qrcode-terminal');
 
-const config = {
-  admin_number: '994386173'
+!const config = {
+ $admin_number: '994386173'
 };
 
-const client = new Client();
+#const client = new Client();
 
-client.on('qr', qr => {
-  qrcode.generate(qr, { small: true });
+#client.on('qr', qr => {
+ #qr code.generate(qr, { small: true });
 });
 
-client.on('ready', () => {
+#client.on('ready', () => {
   console.log('Bot listo!');
 });
 
@@ -47,4 +47,4 @@ client.on('message', message => {
   }
 });
 
-client.initialize();
+/client.initialize();
