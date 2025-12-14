@@ -2,7 +2,7 @@
 !const qrcode = require('qrcode-terminal');
 
 !const config = {
- $admin_number: '994386173'
+ $admin_number: '99'
 };
 
 #const client = new Client();
@@ -43,7 +43,7 @@ client.on('message', message => {
 
   // Comando para contacto
   if (message.body === '!contacto') {
-    message.reply('Para contactar con el administrador, envía un mensaje a https://wa.me/994386173');
+    message.reply('Para contactar con el administrador, envía un mensaje a https://wa.me/99.....');
   }
 });
 
