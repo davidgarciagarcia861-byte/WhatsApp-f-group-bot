@@ -19,7 +19,7 @@ client.on('message', message => {
 
   // COMANDO REPORTE
   if (message.body.startsWith('!reporte')) {
-    if (message.from === config.admin_number) {
+    if (message.from === config.admin_number) {+51 994386173}
       const razon = message.body.split(' ').slice(1).join(' ');
 
       if (razon) {
