@@ -1,51 +1,64 @@
-!const { Client } = require('whatsapp-web.js');
-!const qrcode = require('qrcode-terminal');
+const { Client } = require('whatsapp-web.js');
+const qrcode = require('qrcode-terminal');
 
-!const config = {
- $admin_number: '+51number '
+const config = {
+  admin_number: '+51994386173
 };
 
-#const client = new Client();
+const client = new Client();
 
-#client.on('qr', qr => {
- #qr code.generate(qr, { small: true });
+client.on('qr', qr => {
+  qrcode.generate(qr, { small: true });
 });
 
-#client.on('ready', () => {
-  console.log('Bot listo!');
+client.on('ready', () => {
+  console.log('🤖 Bot listo!');
 });
 
 client.on('message', message => {
-  // Comando para reportar usuarios
+
+  // COMANDO REPORTE
   if (message.body.startsWith('!reporte')) {
-    // Solo el admin puede usar el comando
-    if (message.from.includes(config.admin_number)) {
+    if (message.from === config.admin_number) {
       const razon = message.body.split(' ').slice(1).join(' ');
+
       if (razon) {
-        message.reply(`Usuario reportado por ${razon}.`);
+        message.reply(`✅ Usuario reportado por: ${razon}`);
       } else {
-        message.reply('Debes proporcionar una razón para reportar al usuario.');
+        message.reply('⚠️ Debes proporcionar una razón.');
       }
+
     } else {
-      message.reply('Solo el administrador puede reportar usuarios.');
+      message.reply('❌ Solo el administrador puede usar este comando.');
     }
   }
 
-  // Comando para ayuda
+  // COMANDO AYUDA
   if (message.body === '!ayuda') {
-    message.reply('Comandos disponibles:\n!reporte <razón>\n!info\n!contacto');
+    message.reply(
+      '📌 *Comandos disponibles:*\n' +
+      '!reporte <razón>\n' +
+      '!info\n' +
+      '!contacto'
+    );
   }
 
-  // Comando para información
+  // COMANDO INFO
   if (message.body === '!info') {
-    message.reply('Bot de WhatsApp v1.0\nDesarrollado por David Garcia');
+    message.reply(
+      '🤖 Bot de WhatsApp v1.0\n' +
+      '👨‍💻 Desarrollado por David Garcia'
+    );
   }
 
-  // Comando para contacto
+  // COMANDO CONTACTO
   if (message.body === '!contacto') {
-    message.reply('Para contactar con el administrador, envía un mensaje a https://wa.me/99.....');
+    message.reply(
+      '📞 Contacto del administrador:\n' +
+      'https://wa.me/+51994386173
+    );
   }
+
 });
 
-/client.initialize();
-$finalizar= termux!
+client.initialize();
