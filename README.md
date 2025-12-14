@@ -1,4 +1,4 @@
-git clone https://github.com/tu-usuario/WhatsApp-f-group-bot.git
+git clone https://github.com/tu-usuario/WhatsApp-f-group-bot
 Many modules were written by David (dot) 
  Licensed under AGPLv3 (see LICENSE file)  Please do not use in military or secret service organizations,
                           or for illegal purposes.
