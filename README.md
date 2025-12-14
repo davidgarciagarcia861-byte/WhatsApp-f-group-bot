@@ -2,7 +2,7 @@
 !const qrcode = require('qrcode-terminal');
 
 !const config = {
- $admin_number: '99'
+ $admin_number: '+51number '
 };
 
 #const client = new Client();
