@@ -1,6 +1,5 @@
 git clone https://github.com/tu-usuario/WhatsApp-f-group-bot.git
-Many modules were written by David (dot) Maciejak @ gmail (dot) com
-                 BFG code by Jan Dlabal <dlabaljan@gmail.com>
+Many modules were written by David (dot) Maciejak 
 
   		    Licensed under AGPLv3 (see LICENSE file)
 
