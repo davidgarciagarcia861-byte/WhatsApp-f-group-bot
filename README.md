@@ -7,7 +7,7 @@ client.on('qr', qr => {
 });
 
 client.on('ready', () => {
-  console.log('🤖 Bot listo!');
+  console.log('🤖 Bot listo!')isj;
 });
 
 client.on('message', message => {
