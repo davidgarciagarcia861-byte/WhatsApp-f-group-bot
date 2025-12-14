@@ -1,9 +1,4 @@
-const { Client } = require('whatsapp-web.js');
-const qrcode = require('qrcode-terminal');
 
-const config = {
-  admin_number: '+51994386173
-};
 
 const client = new Client();
 
