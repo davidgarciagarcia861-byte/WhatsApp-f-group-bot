@@ -6,7 +6,7 @@ client.on('qr', qr => {
   qrcode.generate(qr, { small: true });
 });
 
-client.on('ready', () => {
+client.on('ready', () => {consola dorm meta
   console.log('🤖 Bot listo!')isj;
 });
 
